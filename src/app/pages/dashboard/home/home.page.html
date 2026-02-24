@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+
+<ion-content fullscreen class="home-content">
+  <div class="home-wrapper">
+    <div *ngIf="isLoading" class="loading-container">
+      <ion-spinner name="crescent"></ion-spinner>
+    </div>
+
+    <!-- PRODUCT LIST -->
+    <div class="product-grid" *ngIf="!isLoading">
+      <div
+        class="product-card"
+        *ngFor="let product of products"
+        (click)="goDetail(product.id)"
+      >
+        <img [src]="product.thumbnail" />
+
+        <div class="product-info">
+          <h3>{{ product.title }}</h3>
+          <p class="price">$ {{ product.price }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination" *ngIf="!isLoading">
+      <ion-button
+        fill="outline"
+        (click)="prevPage()"
+        [disabled]="currentPage === 1"
+      >
+        Prev
+      </ion-button>
+
+      <span class="page-number"> Page {{ currentPage }} </span>
+
+      <ion-button
+        fill="outline"
+        (click)="nextPage()"
+        [disabled]="currentPage * limit >= total"
+      >
+        Next
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

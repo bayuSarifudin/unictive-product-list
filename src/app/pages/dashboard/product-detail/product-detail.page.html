@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<ion-content fullscreen class="detail-content">
+  <div class="detail-wrapper">
+    @if (isLoading) {
+    <div class="loading-container">
+      <ion-spinner name="crescent"></ion-spinner>
+    </div>
+    } @if (!isLoading && product) {
+
+    <div class="detail-card">
+      <!-- IMAGE -->
+      <div class="image-container">
+        <img [src]="product.thumbnail" />
+      </div>
+
+      <!-- INFO -->
+      <div class="detail-info">
+        <h1 class="title">{{ product.title }}</h1>
+
+        <p class="description">{{ product.description }}</p>
+
+        <div class="price-section">
+          <span class="price"> {{ product.price | currency }} </span>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="action-buttons">
+          <ion-button fill="outline" class="back-btn" (click)="goBack()">
+            Back
+          </ion-button>
+
+          <ion-button class="buy-btn"> Buy Now </ion-button>
+        </div>
+      </div>
+    </div>
+
+    }
+  </div>
+</ion-content>

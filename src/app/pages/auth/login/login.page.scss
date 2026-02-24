@@ -1,0 +1,67 @@
+.login-content {
+  --background: linear-gradient(
+    135deg,
+    #eef2ff 0%,
+    #e0e7ff 50%,
+    #f5f3ff 100%
+  );
+}
+
+.login-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+}
+
+.custom-input {
+  --background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  margin-bottom: 16px;
+  color:#1f2937;
+}
+
+ion-input {
+  font-size: 14px;
+}
+
+.login-button {
+  margin-top: 12px;
+  --background: #6366f1;
+  --border-radius: 12px;
+  height: 48px;
+  font-weight: 600;
+  color: #e0e7ff;
+}
+
+.login-button::part(native) {
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}

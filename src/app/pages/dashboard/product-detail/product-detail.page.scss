@@ -1,0 +1,80 @@
+.detail-content {
+  --background: #f9fafb;
+}
+
+.detail-wrapper {
+  padding: 20px;
+}
+
+/* Loading */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/* Card */
+.detail-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Image */
+.image-container img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+
+/* Info */
+.detail-info {
+  padding: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Price */
+.price-section {
+  margin-bottom: 24px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.back-btn {
+  --border-radius: 12px;
+}
+
+.buy-btn {
+  --background: #6366f1;
+  --border-radius: 12px;
+  font-weight: 600;
+}
+
+.buy-btn::part(native) {
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+}
