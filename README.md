@@ -13,7 +13,11 @@ This project demonstrates:
 
 ---
 
-### list user can be accessed in [here](https://dummyjson.com/users)
+### You can try the deployed app [HERE](https://product-unictive-test.netlify.app)
+
+---
+
+### List user can be accessed in [here](https://dummyjson.com/users)
 
 ---
 
