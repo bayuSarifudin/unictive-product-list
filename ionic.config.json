@@ -1,0 +1,7 @@
+{
+  "name": "unictive-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
