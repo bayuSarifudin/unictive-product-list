@@ -52,15 +52,15 @@ jika angka hasil pembagian dari 14 dan 4 hasilnya 0 maka angka diubah menjadi Un
 ### ANSWER CODE
 
 ```
-  const length = 30
+  const number = 30
 
-  for (let i = 1; i <= length; i++) {
-    if (i % 4 === 0) console.log('Unictive')
+  for (let i = 1; i <= number; i++) {
     if (i % 4 === 0 && i % 14 === 0) console.log('Unictive Media')
-    console.log(i)
+    else if (i % 4 === 0) console.log('Unictive')
+    else console.log(i)
   }
 ```
 
 ### RESULT EXAMPLE
 
-![RESULT](src/assets/ResultExample.png)
+![RESULT](src/assets/example.png)
