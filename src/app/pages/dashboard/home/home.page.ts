@@ -3,10 +3,6 @@ import { Router } from '@angular/router';
 import {
   IonContent,
   IonSpinner,
-  IonList,
-  IonItem,
-  IonThumbnail,
-  IonLabel,
   IonButton
 } from '@ionic/angular/standalone';
 
@@ -23,10 +19,6 @@ import { Product } from 'src/app/services/product';
     CommonModule,
     IonContent,
     IonSpinner,
-    IonList,
-    IonItem,
-    IonThumbnail,
-    IonLabel,
     IonButton,
     NavbarComponent,
   ],
